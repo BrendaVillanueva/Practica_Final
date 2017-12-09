@@ -35,8 +35,7 @@ namespace Practica_Final
                 Inicio_Volver.IsVisible = false;
                 Prioridad_A.IsEnabled = true;
                 Prioridad_A.IsVisible = true;
-                Prioridad_B.IsEnabled = true;
-                Prioridad_B.IsVisible = true;
+               
             }
 
             else
@@ -65,10 +64,6 @@ namespace Practica_Final
             Navigation.PushAsync(new PrioridadA());
         }
 
-        private void Prioridad_B_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new PrioridadB());
-
-        }
+ 
     }
 }

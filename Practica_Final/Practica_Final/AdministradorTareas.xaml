@@ -59,9 +59,6 @@
 
             <Button x:Name="Inicio_Volver" Text="Inicio" Clicked="Inicio_Volver_Clicked"/>
             <Button x:Name="Prioridad_A" Text="Tareas Prioridad Alta" Clicked="Prioridad_A_Clicked" IsEnabled="False" IsVisible="False"/>
-            <Button x:Name="Prioridad_B" Text="Tareas Prioridad Baja" Clicked="Prioridad_B_Clicked" IsEnabled="False" IsVisible="False"/>
-            
-
 
         </StackLayout>
     </ContentPage.Content>

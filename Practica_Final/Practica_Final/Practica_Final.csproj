@@ -66,9 +66,6 @@
     <Compile Include="PrioridadAdmin.xaml.cs">
       <DependentUpon>PrioridadAdmin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PrioridadB.xaml.cs">
-      <DependentUpon>PrioridadB.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelectPage.xaml.cs">
       <DependentUpon>SelectPage.xaml</DependentUpon>
@@ -199,12 +196,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="PrioridadA.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="PrioridadB.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

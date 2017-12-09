@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_Final.TareaSelect">
+    <ContentPage.Content>
+        <Grid BackgroundColor="LightYellow">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <Label Text="Id: " Grid.Column="0" Grid.Row="0" VerticalOptions="Center"/>
+            <Entry x:Name="Entry_IdTA" Text="{Binding Id_tareas}" Grid.Column="1" Grid.Row="0" IsEnabled="False"/>
+
+            <Label Text="Nombre Tareas: " Grid.Column="0" Grid.Row="1" VerticalOptions="Center"/>
+            <Entry x:Name="Entry_NombreT" Text="{Binding Nombre_tareas}" Grid.Column="1" Grid.Row="1"/>
+
+            <Label Text="Descripcion: " Grid.Column="0" Grid.Row="2" VerticalOptions="Center"/>
+            <Entry x:Name="Entry_Descripcion" Text="{Binding Descripcion}" Grid.Column="1" Grid.Row="2"/>
+
+            <Label Text="Responsable" Grid.Column="0" Grid.Row="3" VerticalOptions="Center"/>
+            <Picker x:Name="Picker_Responsable" Grid.Column="1" Grid.Row="3"/>
+
+            <Label Text="Prioridad" Grid.Column="0" Grid.Row="4" VerticalOptions="Center"/>
+            <Picker x:Name="Picker_Prioridad" Grid.Column="1" Grid.Row="4"/>
+
+            <Label Text="Fecha De Entrega" Grid.Column="0" Grid.Row="5" VerticalOptions="Center"/>
+            <DatePicker x:Name="Picker_FechaE"  Grid.Column="1" Grid.Row="5" MaximumDate="2100-01-01" MinimumDate="2000-01-01" />
+
+            <Label Text="Dependencia" Grid.Column="0" Grid.Row="6" VerticalOptions="Center"/>
+            <Picker x:Name="Picker_Dependencia"  Grid.Column="1" Grid.Row="6"/>
+
+            <Label Text="Status" Grid.Column="0" Grid.Row="7" VerticalOptions="Center"/>
+            <Picker x:Name="Picker_Status"  Grid.Column="1" Grid.Row="7"/>
+
+            <Button x:Name="Button_Actualizar" Text="Actualizar Tarea" Clicked="Button_Actualizar_Clicked" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2"/>
+            <Button x:Name="Button_Eliminar" Text="Eliminar Tarea" Clicked="Button_Eliminar_Clicked" Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2"/>
+
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

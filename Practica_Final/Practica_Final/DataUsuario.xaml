@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_Final.DataUsuario">
+    <ContentPage.Content>
+
+        <StackLayout Margin="10,5">
+            <ListView ItemsSource="{Binding Items}" CachingStrategy="RecycleElement" ItemSelected="Handle_ItemSelected" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="200">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+
+                                </Grid.RowDefinitions>
+
+                                <Label Text="Id:" Grid.Column="0" Grid.Row="0" BackgroundColor="Yellow" />
+                                <Label Text="{Binding Id}" Grid.Column="1" Grid.Row="0" BackgroundColor="Yellow" />
+                                
+                                <Label Text="Nombre:" Grid.Column="0" Grid.Row="1" />
+                                <Label Text="{Binding Nombre}" Grid.Column="1" Grid.Row="1" />
+
+                                <Label Text="Password:" Grid.Column="0" Grid.Row="2" />
+                                <Label Text="{Binding Password}" Grid.Column="1" Grid.Row="2" />
+
+                                <Label Text="Rol:" Grid.Column="0" Grid.Row="3" />
+                                <Label Text="{Binding Rol}" Grid.Column="1" Grid.Row="3" />
+
+                               
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button Text="Insertar Nuevo Usuario" Clicked="Button_Clicked"/>
+            <Button x:Name="Button_Inicio" Text="INICIO" Clicked="Button_Inicio_Clicked"/>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

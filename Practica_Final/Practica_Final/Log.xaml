@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_Final.Log">
+    <ContentPage.Content>
+
+        <Grid BackgroundColor="LightBlue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+               
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+               
+              
+
+
+            </Grid.RowDefinitions>
+
+            <Label Text="Nombre: " Grid.Column="0" Grid.Row="0" VerticalOptions="Center" FontSize="Small"/>
+            <Entry x:Name="Entry_Nombre" Grid.Column="1" Grid.Row="0"/>
+
+            <Label Text="Password: " Grid.Column="0" Grid.Row="1" VerticalOptions="Center" FontSize="Small"/>
+            <Entry x:Name="Entry_Password" Grid.Column="1" Grid.Row="1" IsPassword="True"/>
+
+
+            <Button x:Name="Iniciar_Sesion" Text="Iniciar Sesion" Clicked="Iniciar_Sesion_Clicked" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" FontSize="Small"/>
+
+
+
+
+        </Grid>
+
+
+    </ContentPage.Content>
+</ContentPage>

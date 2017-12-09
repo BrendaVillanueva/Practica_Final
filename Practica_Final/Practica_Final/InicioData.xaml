@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_Final.InicioData">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightBlue">
+
+            <Label Text="MENU DE OPCIONES" HorizontalOptions="Center" BackgroundColor="Aqua"/>
+            
+            
+            <Button Text="Consultar Y Registrar Usuarios" x:Name="Cons_Usuarios" VerticalOptions="Center" Clicked="Cons_Usuarios_Clicked"/>
+            <Button Text="Consultar Tareas" x:Name="Cons_Tareas" VerticalOptions="Center" Clicked="Cons_Tareas_Clicked"/>
+            <Button Text="Asignar Tareas" x:Name="Asig_Tareas" VerticalOptions="Center" Clicked="Asig_Tareas_Clicked"/>
+            <Button Text="Tareas Perdidas" x:Name="Tareas_P" VerticalOptions="Center" Clicked="Tareas_P_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

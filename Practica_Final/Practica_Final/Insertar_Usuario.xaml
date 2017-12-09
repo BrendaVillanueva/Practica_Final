@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_Final.Insertar_Usuario">
+    <ContentPage.Content>
+        <Grid BackgroundColor="LightYellow">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+               
+
+
+            </Grid.RowDefinitions>
+
+            <Label Text="Id: " Grid.Column="0" Grid.Row="0" VerticalOptions="Center"/>
+            <Entry x:Name="Entry_Id" Grid.Column="1" Grid.Row="0" Keyboard="Numeric"/>
+            
+            <Label Text="Nombre: " Grid.Column="0" Grid.Row="1" VerticalOptions="Center"/>
+            <Entry x:Name="Entry_Nombre" Grid.Column="1" Grid.Row="1"/>
+
+            <Label Text="Password: " Grid.Column="0" Grid.Row="2" VerticalOptions="Center"/>
+            <Entry x:Name="Entry_Password" Grid.Column="1" Grid.Row="2"/>
+
+            <Label Text="Rol" Grid.Column="0" Grid.Row="3" VerticalOptions="Center"/>
+            <Picker x:Name="Picker_Rol" Grid.Column="1" Grid.Row="3"/>
+
+            <Button x:Name="Button_Insertar" Text="Insertar Usuario" Clicked="Button_Insertar_Clicked" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2"/>
+           
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

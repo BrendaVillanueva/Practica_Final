@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_Final.PrioridadAdmin">
+    <ContentPage.Content>
+        <StackLayout Margin="10,5">
+            <ListView ItemsSource="{Binding Items}" CachingStrategy="RecycleElement">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="200">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150" />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+
+                                </Grid.RowDefinitions>
+
+                                <Label Text="Id:" Grid.Column="0" Grid.Row="0" BackgroundColor="Yellow"/>
+                                <Label Text="{Binding Id_tareas}" Grid.Column="1" Grid.Row="0" BackgroundColor="Yellow" />
+
+                                <Label Text="Nombre Tarea:" Grid.Column="0" Grid.Row="1" />
+                                <Label Text="{Binding Nombre_tareas}" Grid.Column="1" Grid.Row="1" />
+
+                                <Label Text="Descripcion:" Grid.Column="0" Grid.Row="2" />
+                                <Label Text="{Binding Descripcion}" Grid.Column="1" Grid.Row="2" />
+
+                                <Label Text="Responsable:" Grid.Column="0" Grid.Row="3" />
+                                <Label Text="{Binding Responsable}" Grid.Column="1" Grid.Row="3" />
+
+                                <Label Text="Prioridad:" Grid.Column="0" Grid.Row="4" />
+                                <Label Text="{Binding Prioridad}" Grid.Column="1" Grid.Row="4" />
+
+                                <Label Text="Fecha de Entrega:" Grid.Column="0" Grid.Row="5" />
+                                <Label Text="{Binding Fecha_entrega}" Grid.Column="1" Grid.Row="5" />
+
+                                <Label Text="Dependencia:" Grid.Column="0" Grid.Row="6" />
+                                <Label Text="{Binding Dependencia}" Grid.Column="1" Grid.Row="6" />
+
+                                <Label Text="Status:" Grid.Column="0" Grid.Row="7" />
+                                <Label Text="{Binding Status}" Grid.Column="1" Grid.Row="7" />
+
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button x:Name="Inicio_Volver" Text="Inicio" Clicked="Inicio_Volver_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -13,9 +13,8 @@ namespace Practica_Final
         {
             InitializeComponent();
 
-            MainPage = new Practica_Final.MainPage();
+            MainPage = new NavigationPage(new Practica_Final.Log());
         }
-
 
         protected override void OnStart()
         {
